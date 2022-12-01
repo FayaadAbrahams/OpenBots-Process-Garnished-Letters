@@ -1,0 +1,35 @@
+{
+  "ProjectID": "84dd090c-3009-4d84-bd88-dd7823fcb50f",
+  "ProjectName": "OpenBots_Process_Garnished_Letters",
+  "ProjectType": "OpenBots",
+  "Main": "Main.obscript",
+  "Version": "1.8.1.0",
+  "ProjectArguments": [],
+  "ProjectDependencies": [
+    {
+      "Name": "OpenBots.Commands.Core",
+      "Version": "1.8.1",
+      "PackageHash": "IZZ9pccfSH+uglTPhPnYus7rjfK2eOvDrOPSgBS/MXXSxgmYD8NpK51u1bAUMrG8vqf+E5zx6boQA5BS3+J1RA=="
+    },
+    {
+      "Name": "OpenBots.Commands.DataManipulation",
+      "Version": "1.8.1",
+      "PackageHash": "CsfVD64u12lhcNs7o7C7s3PYrvySONdQA3pkzjN1imiZMgQ28fgblDOm1KoTbpIA/bEEP4gzF1DOztXbFGINyA=="
+    },
+    {
+      "Name": "OpenBots.Commands.Microsoft",
+      "Version": "1.8.1",
+      "PackageHash": "B7PqQrULfRAfcDvE6IHKGNpryvEsEo9lKp7QYNOjxj9dHtgym5BJufJZYEFPz5FnGIveEjDogKbym2YewB70PA=="
+    },
+    {
+      "Name": "OpenBots.Commands.SystemAutomation",
+      "Version": "1.8.1",
+      "PackageHash": "F1uV8PjtGHnORynhp77Hmn7WYdLnpRP0DFPuY+onSLwyIy4du/RAA5QyfjDd7z9a5H5mhga8o7HPnY9OxwpTkA=="
+    },
+    {
+      "Name": "OpenBots.Commands.UIAutomation",
+      "Version": "1.8.1",
+      "PackageHash": "pPN8x4lWtoAM3OAjkn2vMhd8cqQafqYefEp8jMA92uYHUFX82QuYmVSRo0N/4svsFHJQWThTrOjJPcDW210cWg=="
+    }
+  ]
+}

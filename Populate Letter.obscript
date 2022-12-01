@@ -1,0 +1,1667 @@
+{
+  "$type": "OpenBots.Core.Script.Script, OpenBots.Core",
+  "Variables": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vWordInstance",
+      "VariableType": "OpenBots.Core.Model.ApplicationModel.OBAppInstance, OpenBots.Core, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vTemplatePath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vMonth",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vYear",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vFilePath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vFileList",
+      "VariableType": "System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vWordPath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vExcelInstance",
+      "VariableType": "OpenBots.Core.Model.ApplicationModel.OBAppInstance, OpenBots.Core, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "dtExcel",
+      "VariableType": "System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vExcelPath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vColumnList",
+      "VariableType": "System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vColumnItem",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "dtFilteredTable",
+      "VariableType": "System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vWordFileName",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vSupplierNum",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vEmailAddr",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vTellNum",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vFaxNum",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vStreetAddress",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vPoBox",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vCity",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vPostalCode",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vBankingNumber",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vDate",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vFinancialInst",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vCount",
+      "VariableType": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "0",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vEmploy",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vNam",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vAmo",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vRef",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vTableCount",
+      "VariableType": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "dtPrintTable",
+      "VariableType": "System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vSum",
+      "VariableType": "System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "0",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "ProjectPath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "\"Value Provided at Runtime\"",
+      "VariableSource": 0
+    }
+  ],
+  "Arguments": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptArgument, OpenBots.Core",
+      "ArgumentName": "in_FolderPath",
+      "ArgumentType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "ArgumentValue": null,
+      "Direction": 0,
+      "AssignedVariable": null
+    }
+  ],
+  "Elements": [],
+  "ImportedNamespaces": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.List`1[[OpenBots.Core.Script.AssemblyReference, OpenBots.Core]], mscorlib]], mscorlib",
+    "Microsoft.Office.Interop.Outlook": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "Microsoft.Office.Interop.Outlook",
+        "AssemblyVersion": "15.0.0.0"
+      }
+    ],
+    "MimeKit": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "MimeKit",
+        "AssemblyVersion": "3.2.0.0"
+      }
+    ],
+    "Newtonsoft.Json.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "Newtonsoft.Json",
+        "AssemblyVersion": "13.0.0.0"
+      }
+    ],
+    "OpenBots.Core.Model.ApplicationModel": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "OpenBots.Core",
+        "AssemblyVersion": "1.8.1.0"
+      }
+    ],
+    "System": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Collections.Generic": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Data": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Data",
+        "AssemblyVersion": "4.0.0.0"
+      },
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Data.DataSetExtensions",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Diagnostics": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Drawing": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Drawing",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.IO": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Core",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Security": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Text": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Text.RegularExpressions": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Threading.Tasks": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Windows.Forms": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Windows.Forms",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Xml": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Xml",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Xml.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Xml.Linq",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ]
+  },
+  "Commands": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Core.ErrorHandling.BeginTryCommand, OpenBots.Commands.Core",
+        "EndScopeCommand": "EndTryCommand",
+        "CommandID": "bd132f20-96b7-4ed7-a7dd-86ad61ef4508",
+        "CommandName": "BeginTryCommand",
+        "SelectionName": "Try",
+        "v_IsPrivate": false,
+        "v_IsRemote": false,
+        "v_ErrorHandling": "None",
+        "v_Comment": null,
+        "CommandEnabled": true,
+        "LineNumber": 1,
+        "IsCommented": false,
+        "PauseBeforeExecution": false
+      },
+      "AdditionalScriptCommands": [
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+            "v_Input": "vMonth = DateTime.Now.ToString(\"MMM\");\r\nvYear = DateTime.Now.ToString(\"yyyy\");\r\n\r\n\r\nvTemplatePath = @\"C:\\Robot Testing\\Year\\Garnishee letter Template.docx\";\r\nvWordPath = @\"C:\\Robot Testing\\Year\\Month Year\\Garnishee Letters Month Year\\Garnishee letter Template.docx\";\r\nvExcelPath = @\"C:\\Robot Testing\\Year\\Month Year\\Final Run\";\r\n\r\nvTemplatePath = vTemplatePath.Replace(\"Year\", vYear);\r\nvTemplatePath = vTemplatePath.Replace(\"Month\", vMonth);\r\n\r\nvWordPath = vWordPath.Replace(\"Year\", vYear);\r\nvWordPath = vWordPath.Replace(\"Month\", vMonth);\r\n\r\nvExcelPath = vExcelPath.Replace(\"Year\", vYear);\r\nvExcelPath = vExcelPath.Replace(\"Month\", vMonth);",
+            "CommandID": "37d8107e-4000-4149-b674-c7c087adb07f",
+            "CommandName": "EvaluateSnippetCommand",
+            "SelectionName": "Evaluate Snippet",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "Setting Variables. ",
+            "CommandEnabled": true,
+            "LineNumber": 2,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Misc.AddCodeCommentCommand, OpenBots.Commands.Core",
+            "CommandID": "5444a3f9-9f5b-44c2-bd11-5f9b477ebfe3",
+            "CommandName": "AddCodeCommentCommand",
+            "SelectionName": "Comment",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "Fetch Data from Excel sheet to use in Word Document. ",
+            "CommandEnabled": true,
+            "LineNumber": 3,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.SystemAutomation.File.GetFilesCommand, OpenBots.Commands.SystemAutomation",
+            "v_SourceFolderPath": "vExcelPath",
+            "v_OutputUserVariableName": "vFileList",
+            "CommandID": "091b4737-fb96-4325-97e3-3e7a93c0be4f",
+            "CommandName": "GetFilesCommand",
+            "SelectionName": "Get Files",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 4,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+            "v_Input": "int index = vFileList.FindIndex(a => a.Contains(\"Garnishee\"));\r\nvExcelPath = vFileList[index];",
+            "CommandID": "f8831627-c685-4361-959a-51abe88ca800",
+            "CommandName": "EvaluateSnippetCommand",
+            "SelectionName": "Evaluate Snippet",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "Filter for File.",
+            "CommandEnabled": true,
+            "LineNumber": 5,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Microsoft.Excel.ExcelCreateApplicationCommand, OpenBots.Commands.Microsoft",
+            "v_InstanceName": "vExcelInstance",
+            "v_NewOpenWorkbook": "Open Workbook",
+            "v_FilePath": "vExcelPath",
+            "v_ReadOnlyBehaviorOption": "Throw Exception",
+            "v_Visible": "Yes",
+            "v_UpdateLinks": "Always",
+            "v_Password": null,
+            "v_CloseAllInstances": "Yes",
+            "CommandID": "9349af80-db97-4609-a853-159b76010173",
+            "CommandName": "ExcelCreateApplicationCommand",
+            "SelectionName": "Excel Create Application",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 6,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Microsoft.Excel.Sheet.ExcelActivateSheetCommand, OpenBots.Commands.Microsoft",
+            "v_InstanceName": "vExcelInstance",
+            "v_SheetName": "\"Financial Inst\"",
+            "CommandID": "21f3f037-a574-4087-ad94-b8848401af99",
+            "CommandName": "ExcelActivateSheetCommand",
+            "SelectionName": "Excel Activate Sheet",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 7,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Microsoft.Excel.Range.ExcelGetRangeCommand, OpenBots.Commands.Microsoft",
+            "v_InstanceName": "vExcelInstance",
+            "v_Range": "\"A1:\"",
+            "v_AddHeaders": "Yes",
+            "v_Formulas": "No",
+            "v_FormatOptions": "Value",
+            "v_OutputUserVariableName": "dtExcel",
+            "CommandID": "bd836c98-4e54-4825-907d-0b9ca1b66866",
+            "CommandName": "ExcelGetRangeCommand",
+            "SelectionName": "Excel Get Range",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 8,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Microsoft.Excel.ExcelCloseApplicationCommand, OpenBots.Commands.Microsoft",
+            "v_InstanceName": "vExcelInstance",
+            "v_ExcelSaveOnExit": "No",
+            "CommandID": "a2eca702-1e34-4f57-913a-60cba645dae6",
+            "CommandName": "ExcelCloseApplicationCommand",
+            "SelectionName": "Excel Close Application",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 9,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.SystemAutomation.Process.StopProcessCommand, OpenBots.Commands.SystemAutomation",
+            "v_ProgramName": "\"excel\"",
+            "v_StopOption": "Kill",
+            "CommandID": "b5e10dae-45db-435a-b7bb-5a3f411ce3ff",
+            "CommandName": "StopProcessCommand",
+            "SelectionName": "Stop Process",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 10,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+            "v_Input": "vColumnList = dtExcel.AsEnumerable().Select(x => x[\"Vendor number\"].ToString()).ToList();\r\n\r\nvColumnList = vColumnList.Distinct().ToList();",
+            "CommandID": "c746fe5b-d273-455e-b5b8-9deaa8a67f37",
+            "CommandName": "EvaluateSnippetCommand",
+            "SelectionName": "Evaluate Snippet",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "Add Column values to lists.",
+            "CommandEnabled": true,
+            "LineNumber": 11,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Misc.AddCodeCommentCommand, OpenBots.Commands.Core",
+            "CommandID": "03991130-f5cb-46a1-81d6-e0399dcd781c",
+            "CommandName": "AddCodeCommentCommand",
+            "SelectionName": "Comment",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "Loop for amount of times.",
+            "CommandEnabled": true,
+            "LineNumber": 12,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Loop.BeginForEachCommand, OpenBots.Commands.Core",
+            "v_LoopParameter": "vColumnList",
+            "v_OutputUserVariableName": "vColumnItem",
+            "EndScopeCommand": "EndLoopCommand",
+            "CommandID": "275ac3ff-28d1-42ed-98b0-6419cc461224",
+            "CommandName": "BeginForEachCommand",
+            "SelectionName": "For Each",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 13,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": [
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                "v_Input": "dtFilteredTable = dtExcel.AsEnumerable()\r\n                                .Where(row => row.Field<String>(\"Vendor Number\")\r\n                                 == vColumnItem).CopyToDataTable();\r\n\r\n\r\n",
+                "CommandID": "fab0383c-6169-41de-9b0a-7fb31d981933",
+                "CommandName": "EvaluateSnippetCommand",
+                "SelectionName": "Evaluate Snippet",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Filter for Column Item. ",
+                "CommandEnabled": true,
+                "LineNumber": 14,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                "v_Input": "// Get column values and store in variables. \r\n\r\nvSupplierNum = dtFilteredTable.Rows[0].Field<String>(\"Vendor Number\");\r\nvEmailAddr = dtFilteredTable.Rows[0].Field<String>(\"Email Address\");\r\nvTellNum = dtFilteredTable.Rows[0].Field<String>(\"Telephone Number\");\r\nvFaxNum = dtFilteredTable.Rows[0].Field<String>(\"Fax Number\");\r\nvStreetAddress = dtFilteredTable.Rows[0].Field<String>(\"Address 1\");\r\nvPoBox = dtFilteredTable.Rows[0].Field<String>(\"Address 2\");\r\nvCity = dtFilteredTable.Rows[0].Field<String>(\"City\");\r\nvPostalCode = dtFilteredTable.Rows[0].Field<String>(\"Postal Code\");\r\nvBankingNumber = dtFilteredTable.Rows[0].Field<String>(\"Banking Details\");\r\nvDate = DateTime.Now.ToString(\"dd/MMM/yyyy\");\r\nvDate = vDate.Replace(\"/\", \" \");\r\nvFinancialInst = dtFilteredTable.Rows[0].Field<String>(\"Fin Inst\");",
+                "CommandID": "949d1a4a-76bf-4e95-a0af-2011374030ec",
+                "CommandName": "EvaluateSnippetCommand",
+                "SelectionName": "Evaluate Snippet",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Fetch Data from filtered table. ",
+                "CommandEnabled": true,
+                "LineNumber": 15,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Misc.AddCodeCommentCommand, OpenBots.Commands.Core",
+                "CommandID": "3169a120-605e-4013-9508-856c6b02b735",
+                "CommandName": "AddCodeCommentCommand",
+                "SelectionName": "Comment",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Find Template File, checks and copies it to correct folder and open Word document.",
+                "CommandEnabled": true,
+                "LineNumber": 16,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.SystemAutomation.File.GetFilesCommand, OpenBots.Commands.SystemAutomation",
+                "v_SourceFolderPath": "in_FolderPath",
+                "v_OutputUserVariableName": "vFileList",
+                "CommandID": "148a4c70-5997-4c21-9b3f-b252b38023f4",
+                "CommandName": "GetFilesCommand",
+                "SelectionName": "Get Files",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 17,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.If.BeginIfCommand, OpenBots.Commands.Core",
+                "v_Option": "Inline",
+                "v_Condition": "!vFileList.Any(s => s.Contains(\"Template\"))",
+                "v_ActionType": null,
+                "v_ActionParameterTable": [],
+                "EndScopeCommand": "EndIfCommand",
+                "CommandID": "4fb9385d-13fc-4e76-9712-2dd37323f56c",
+                "CommandName": "BeginIfCommand",
+                "SelectionName": "If",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Checks if Keyword exists in Folder Path. ",
+                "CommandEnabled": true,
+                "LineNumber": 18,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": [
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.SystemAutomation.File.MoveCopyFileCommand, OpenBots.Commands.SystemAutomation",
+                    "v_OperationType": "Copy File",
+                    "v_SourceFilePath": "vTemplatePath",
+                    "v_DestinationDirectory": "in_FolderPath",
+                    "v_CreateDirectory": "No",
+                    "v_OverwriteFile": "No",
+                    "CommandID": "c81dc1a7-91ca-4aeb-ab39-09ac673c585f",
+                    "CommandName": "MoveCopyFileCommand",
+                    "SelectionName": "Move/Copy File",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 19,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.If.EndIfCommand, OpenBots.Commands.Core",
+                    "CommandID": "14210460-72f0-4046-beee-cb87b49de43a",
+                    "CommandName": "EndIfCommand",
+                    "SelectionName": "End If",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 20,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                }
+              ]
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.WordCreateApplicationCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_NewOpenDocument": "Open Document",
+                "v_FilePath": "vWordPath",
+                "v_ReadOnlyBehaviorOption": "Throw Exception",
+                "v_Visible": "Yes",
+                "v_CloseAllInstances": "Yes",
+                "CommandID": "46244118-3fe7-4bab-9cb5-a198e88efe30",
+                "CommandName": "WordCreateApplicationCommand",
+                "SelectionName": "Word Create Application",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 21,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Misc.AddCodeCommentCommand, OpenBots.Commands.Core",
+                "CommandID": "ad235f97-b31d-4a62-ae2b-214131de8815",
+                "CommandName": "AddCodeCommentCommand",
+                "SelectionName": "Comment",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Replace Data in Word Document.",
+                "CommandEnabled": true,
+                "LineNumber": 22,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"SupplierNum\"",
+                "v_ReplaceWithText": "vSupplierNum",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 23,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"EmailAddr\"",
+                "v_ReplaceWithText": "vEmailAddr",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 24,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"TellNum\"",
+                "v_ReplaceWithText": "vTellNum",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 25,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"FaxNum\"",
+                "v_ReplaceWithText": "vFaxNum",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 26,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"StreetAddress\"",
+                "v_ReplaceWithText": "vStreetAddress",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 27,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"POBox\"",
+                "v_ReplaceWithText": "vPoBox",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 28,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"City\"",
+                "v_ReplaceWithText": "vCity",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 29,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"PostalCode\"",
+                "v_ReplaceWithText": "vPostalCode",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 30,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"BankingNumber\"",
+                "v_ReplaceWithText": "vBankingNumber",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 31,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"Date\"",
+                "v_ReplaceWithText": "vDate",
+                "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 32,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Misc.AddCodeCommentCommand, OpenBots.Commands.Core",
+                "CommandID": "0177f0eb-70b3-4f62-a9fb-30433784e516",
+                "CommandName": "AddCodeCommentCommand",
+                "SelectionName": "Comment",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Calculating Table in Word Document.",
+                "CommandEnabled": true,
+                "LineNumber": 33,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.DataManipulation.DataTable.GetDataRowCountCommand, OpenBots.Commands.DataManipulation",
+                "v_DataTable": "dtFilteredTable",
+                "v_OutputUserVariableName": "vTableCount",
+                "CommandID": "1670bf6a-daa0-47cf-b77f-b00b80a9b4c6",
+                "CommandName": "GetDataRowCountCommand",
+                "SelectionName": "Get DataRow Count",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 34,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.SetVariableCommand, OpenBots.Commands.Core",
+                "v_Input": "1",
+                "v_OutputUserVariableName": "vCount",
+                "CommandID": "1978e6ca-a3c5-45ad-ae68-421d43a8564d",
+                "CommandName": "SetVariableCommand",
+                "SelectionName": "Set Variable",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 35,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Loop.LoopNumberOfTimesCommand, OpenBots.Commands.Core",
+                "v_LoopParameter": "vTableCount",
+                "EndScopeCommand": "EndLoopCommand",
+                "CommandID": "e9a87b8a-9358-4591-91b9-bf8b5f1643c5",
+                "CommandName": "LoopNumberOfTimesCommand",
+                "SelectionName": "Loop Number Of Times",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 36,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": [
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                    "v_Input": "// Get column values and store in variables. \r\n\r\nvEmploy = dtFilteredTable.Rows[(vCount-1)].Field<String>(\"Emp Num\");\r\n\r\nString lastName = dtFilteredTable.Rows[(vCount-1)].Field<String>(\"Emp Last Name\");\r\nString initial = dtFilteredTable.Rows[(vCount-1)].Field<String>(\"Emp Initials\");\r\nvNam = lastName +\" \"+initial; \r\nvAmo = dtFilteredTable.Rows[(vCount-1)].Field<String>(\"Pay Value\");\r\nvRef = dtFilteredTable.Rows[(vCount-1)].Field<String>(\"Ref Num\");\r\n\r\n\r\n\r\n",
+                    "CommandID": "949d1a4a-76bf-4e95-a0af-2011374030ec",
+                    "CommandName": "EvaluateSnippetCommand",
+                    "SelectionName": "Evaluate Snippet",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": "Fetch Data from filtered table. ",
+                    "CommandEnabled": true,
+                    "LineNumber": 37,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                    "v_InstanceName": "vWordInstance",
+                    "v_FindText": "\"Employ\"+(vCount)",
+                    "v_ReplaceWithText": "vEmploy",
+                    "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                    "CommandName": "WordReplaceTextCommand",
+                    "SelectionName": "Word Replace Text",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 38,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                    "v_InstanceName": "vWordInstance",
+                    "v_FindText": "\"Nam\"+(vCount)",
+                    "v_ReplaceWithText": "vNam",
+                    "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                    "CommandName": "WordReplaceTextCommand",
+                    "SelectionName": "Word Replace Text",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 39,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                    "v_InstanceName": "vWordInstance",
+                    "v_FindText": "\"Amo\" +(vCount)",
+                    "v_ReplaceWithText": "vAmo",
+                    "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                    "CommandName": "WordReplaceTextCommand",
+                    "SelectionName": "Word Replace Text",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 40,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                    "v_Input": "\r\nString stringValue = dtFilteredTable.Rows[(vCount-1)].Field<String>(\"Pay Value\");\r\nDouble doubleValue = Double.Parse(stringValue);\r\n\r\nvSum = vSum + doubleValue;",
+                    "CommandID": "da713df1-80d2-49c9-987a-5661bcdebf63",
+                    "CommandName": "EvaluateSnippetCommand",
+                    "SelectionName": "Evaluate Snippet",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": "Get the value of Column and Add to Sum. ",
+                    "CommandEnabled": true,
+                    "LineNumber": 41,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                    "v_InstanceName": "vWordInstance",
+                    "v_FindText": "\"Ref\" +(vCount)",
+                    "v_ReplaceWithText": "vRef",
+                    "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                    "CommandName": "WordReplaceTextCommand",
+                    "SelectionName": "Word Replace Text",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 42,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.Variable.SetVariableCommand, OpenBots.Commands.Core",
+                    "v_Input": "vCount + 1;",
+                    "v_OutputUserVariableName": "vCount",
+                    "CommandID": "0af6db64-975d-4b2a-9fab-2595bf39b853",
+                    "CommandName": "SetVariableCommand",
+                    "SelectionName": "Set Variable",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 43,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.Loop.EndLoopCommand, OpenBots.Commands.Core",
+                    "CommandID": "08b4ff11-9a40-43e4-bcea-9c63824d7a4d",
+                    "CommandName": "EndLoopCommand",
+                    "SelectionName": "End Loop Number Of Times",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 44,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                }
+              ]
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_FindText": "\"Sum\"",
+                "v_ReplaceWithText": "vSum.ToString();",
+                "CommandID": "3d05c4df-8348-440a-b0d4-a52d886c287f",
+                "CommandName": "WordReplaceTextCommand",
+                "SelectionName": "Word Replace Text",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 45,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                "v_Input": "vSum = 0;",
+                "CommandID": "4fd041c2-29eb-48a6-adc7-e668317b3aa7",
+                "CommandName": "EvaluateSnippetCommand",
+                "SelectionName": "Evaluate Snippet",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Reset Sum back to 0 - So it can be used for the next Word Document.",
+                "CommandEnabled": true,
+                "LineNumber": 46,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.If.BeginIfCommand, OpenBots.Commands.Core",
+                "v_Option": "Inline",
+                "v_Condition": "vTableCount != 7",
+                "v_ActionType": null,
+                "v_ActionParameterTable": [],
+                "EndScopeCommand": "EndIfCommand",
+                "CommandID": "c59680a0-e51b-4f84-8dcb-dcf6daeeda1c",
+                "CommandName": "BeginIfCommand",
+                "SelectionName": "If",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 47,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": [
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.Loop.LoopNumberOfTimesCommand, OpenBots.Commands.Core",
+                    "v_LoopParameter": "(8 - vTableCount)",
+                    "EndScopeCommand": "EndLoopCommand",
+                    "CommandID": "34e04c71-3656-4b37-85b2-f63ca70b7319",
+                    "CommandName": "LoopNumberOfTimesCommand",
+                    "SelectionName": "Loop Number Of Times",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 48,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": [
+                    {
+                      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                      "ScriptCommand": {
+                        "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                        "v_InstanceName": "vWordInstance",
+                        "v_FindText": "\"Employ\"+(vTableCount+1)",
+                        "v_ReplaceWithText": "\" \"",
+                        "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                        "CommandName": "WordReplaceTextCommand",
+                        "SelectionName": "Word Replace Text",
+                        "v_IsPrivate": false,
+                        "v_IsRemote": false,
+                        "v_ErrorHandling": "None",
+                        "v_Comment": null,
+                        "CommandEnabled": true,
+                        "LineNumber": 49,
+                        "IsCommented": false,
+                        "PauseBeforeExecution": false
+                      },
+                      "AdditionalScriptCommands": null
+                    },
+                    {
+                      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                      "ScriptCommand": {
+                        "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                        "v_InstanceName": "vWordInstance",
+                        "v_FindText": "\"Nam\"+(vTableCount+1)",
+                        "v_ReplaceWithText": "\" \"",
+                        "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                        "CommandName": "WordReplaceTextCommand",
+                        "SelectionName": "Word Replace Text",
+                        "v_IsPrivate": false,
+                        "v_IsRemote": false,
+                        "v_ErrorHandling": "None",
+                        "v_Comment": null,
+                        "CommandEnabled": true,
+                        "LineNumber": 50,
+                        "IsCommented": false,
+                        "PauseBeforeExecution": false
+                      },
+                      "AdditionalScriptCommands": null
+                    },
+                    {
+                      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                      "ScriptCommand": {
+                        "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                        "v_InstanceName": "vWordInstance",
+                        "v_FindText": "\"Amo\" +(vTableCount+1)",
+                        "v_ReplaceWithText": "\" \"",
+                        "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                        "CommandName": "WordReplaceTextCommand",
+                        "SelectionName": "Word Replace Text",
+                        "v_IsPrivate": false,
+                        "v_IsRemote": false,
+                        "v_ErrorHandling": "None",
+                        "v_Comment": null,
+                        "CommandEnabled": true,
+                        "LineNumber": 51,
+                        "IsCommented": false,
+                        "PauseBeforeExecution": false
+                      },
+                      "AdditionalScriptCommands": null
+                    },
+                    {
+                      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                      "ScriptCommand": {
+                        "$type": "OpenBots.Commands.Microsoft.Word.Content.WordReplaceTextCommand, OpenBots.Commands.Microsoft",
+                        "v_InstanceName": "vWordInstance",
+                        "v_FindText": "\"Ref\" +(vTableCount+1)",
+                        "v_ReplaceWithText": "\" \"",
+                        "CommandID": "0242df65-658d-4fae-ae1b-06381dc1ad04",
+                        "CommandName": "WordReplaceTextCommand",
+                        "SelectionName": "Word Replace Text",
+                        "v_IsPrivate": false,
+                        "v_IsRemote": false,
+                        "v_ErrorHandling": "None",
+                        "v_Comment": null,
+                        "CommandEnabled": true,
+                        "LineNumber": 52,
+                        "IsCommented": false,
+                        "PauseBeforeExecution": false
+                      },
+                      "AdditionalScriptCommands": null
+                    },
+                    {
+                      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                      "ScriptCommand": {
+                        "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                        "v_Input": "vTableCount = vTableCount + 1;",
+                        "CommandID": "85da2927-9768-4ea7-8d58-1b9193a06bdf",
+                        "CommandName": "EvaluateSnippetCommand",
+                        "SelectionName": "Evaluate Snippet",
+                        "v_IsPrivate": false,
+                        "v_IsRemote": false,
+                        "v_ErrorHandling": "None",
+                        "v_Comment": null,
+                        "CommandEnabled": true,
+                        "LineNumber": 53,
+                        "IsCommented": false,
+                        "PauseBeforeExecution": false
+                      },
+                      "AdditionalScriptCommands": null
+                    },
+                    {
+                      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                      "ScriptCommand": {
+                        "$type": "OpenBots.Commands.Core.Loop.EndLoopCommand, OpenBots.Commands.Core",
+                        "CommandID": "7321fc05-7973-4780-b63c-a0822316da5c",
+                        "CommandName": "EndLoopCommand",
+                        "SelectionName": "End Loop Number Of Times",
+                        "v_IsPrivate": false,
+                        "v_IsRemote": false,
+                        "v_ErrorHandling": "None",
+                        "v_Comment": null,
+                        "CommandEnabled": true,
+                        "LineNumber": 54,
+                        "IsCommented": false,
+                        "PauseBeforeExecution": false
+                      },
+                      "AdditionalScriptCommands": null
+                    }
+                  ]
+                },
+                {
+                  "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+                  "ScriptCommand": {
+                    "$type": "OpenBots.Commands.Core.If.EndIfCommand, OpenBots.Commands.Core",
+                    "CommandID": "83173d75-1d5a-4133-9824-e57794bf54fa",
+                    "CommandName": "EndIfCommand",
+                    "SelectionName": "End If",
+                    "v_IsPrivate": false,
+                    "v_IsRemote": false,
+                    "v_ErrorHandling": "None",
+                    "v_Comment": null,
+                    "CommandEnabled": true,
+                    "LineNumber": 55,
+                    "IsCommented": false,
+                    "PauseBeforeExecution": false
+                  },
+                  "AdditionalScriptCommands": null
+                }
+              ]
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Misc.AddCodeCommentCommand, OpenBots.Commands.Core",
+                "CommandID": "0177f0eb-70b3-4f62-a9fb-30433784e516",
+                "CommandName": "AddCodeCommentCommand",
+                "SelectionName": "Comment",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Finishing up word Document and Closing.",
+                "CommandEnabled": true,
+                "LineNumber": 56,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                "v_Input": "\r\nvar date = DateTime.Now.ToString(\"dd/MM/yy\");\r\ndate = date.Replace(\"/\", \" \"); \r\n\r\nvWordFileName = vFinancialInst+ \" Garnishee Letter \" + date+\".docx\";",
+                "CommandID": "d3611d9c-60b3-45ed-9df2-99ed1638a5b0",
+                "CommandName": "EvaluateSnippetCommand",
+                "SelectionName": "Evaluate Snippet",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Set the name of the word file. ",
+                "CommandEnabled": true,
+                "LineNumber": 57,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Microsoft.Word.WordCloseApplicationCommand, OpenBots.Commands.Microsoft",
+                "v_InstanceName": "vWordInstance",
+                "v_WordSaveOnExit": "Yes",
+                "CommandID": "4f7ea1a7-b1e8-4a06-a6b8-ae6baadce6d8",
+                "CommandName": "WordCloseApplicationCommand",
+                "SelectionName": "Word Close Application",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 58,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.SystemAutomation.Process.StopProcessCommand, OpenBots.Commands.SystemAutomation",
+                "v_ProgramName": "\"word\"",
+                "v_StopOption": "Kill",
+                "CommandID": "b1e9648e-f77a-4c65-92a6-7a3b7e6a13f2",
+                "CommandName": "StopProcessCommand",
+                "SelectionName": "Stop Process",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 59,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.SystemAutomation.File.RenameFileCommand, OpenBots.Commands.SystemAutomation",
+                "v_SourceFilePath": "vWordPath",
+                "v_NewName": "vWordFileName",
+                "CommandID": "20179966-0885-4343-8450-bbe2f0c3560c",
+                "CommandName": "RenameFileCommand",
+                "SelectionName": "Rename File",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 60,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Loop.EndLoopCommand, OpenBots.Commands.Core",
+                "CommandID": "44ea9523-2f50-4def-a262-8d1a5c57ddd2",
+                "CommandName": "EndLoopCommand",
+                "SelectionName": "End For Each",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 61,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            }
+          ]
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.ErrorHandling.CatchCommand, OpenBots.Commands.Core",
+            "v_Option": "Inline",
+            "v_VariableExceptionType": "typeof(System.Exception)",
+            "v_ExceptionType": "Exception",
+            "v_OutputUserVariableName": null,
+            "CommandID": "b1afd29a-2559-496c-8943-5738ad9c25a1",
+            "CommandName": "CatchCommand",
+            "SelectionName": "Catch",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 62,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.ErrorHandling.EndTryCommand, OpenBots.Commands.Core",
+            "CommandID": "46007dab-67eb-460b-abd9-e687958e16d4",
+            "CommandName": "EndTryCommand",
+            "SelectionName": "End Try",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 63,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        }
+      ]
+    }
+  ],
+  "Version": "1.8.1.0"
+}

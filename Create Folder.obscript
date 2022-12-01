@@ -1,0 +1,485 @@
+{
+  "$type": "OpenBots.Core.Script.Script, OpenBots.Core",
+  "Variables": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vFilePath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vMonth",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vYear",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vFolderList",
+      "VariableType": "System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": null,
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "vCreatedFolderName",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "",
+      "VariableSource": 0
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptVariable, OpenBots.Core",
+      "VariableName": "ProjectPath",
+      "VariableType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "VariableValue": "\"Value Provided at Runtime\"",
+      "VariableSource": 0
+    }
+  ],
+  "Arguments": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptArgument, OpenBots.Core",
+      "ArgumentName": "out_FolderPath",
+      "ArgumentType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "ArgumentValue": null,
+      "Direction": 1,
+      "AssignedVariable": null
+    }
+  ],
+  "Elements": [],
+  "ImportedNamespaces": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.List`1[[OpenBots.Core.Script.AssemblyReference, OpenBots.Core]], mscorlib]], mscorlib",
+    "Microsoft.Office.Interop.Outlook": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "Microsoft.Office.Interop.Outlook",
+        "AssemblyVersion": "15.0.0.0"
+      }
+    ],
+    "MimeKit": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "MimeKit",
+        "AssemblyVersion": "3.2.0.0"
+      }
+    ],
+    "Newtonsoft.Json.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "Newtonsoft.Json",
+        "AssemblyVersion": "13.0.0.0"
+      }
+    ],
+    "OpenBots.Core.Model.ApplicationModel": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "OpenBots.Core",
+        "AssemblyVersion": "1.8.1.0"
+      }
+    ],
+    "System": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Collections.Generic": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Data": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Data",
+        "AssemblyVersion": "4.0.0.0"
+      },
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Data.DataSetExtensions",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Diagnostics": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Drawing": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Drawing",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.IO": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Core",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Security": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Text": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Text.RegularExpressions": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Threading.Tasks": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "mscorlib",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Windows.Forms": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Windows.Forms",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Xml": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Xml",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ],
+    "System.Xml.Linq": [
+      {
+        "$type": "OpenBots.Core.Script.AssemblyReference, OpenBots.Core",
+        "AssemblyName": "System.Xml.Linq",
+        "AssemblyVersion": "4.0.0.0"
+      }
+    ]
+  },
+  "Commands": [
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Core.ErrorHandling.BeginTryCommand, OpenBots.Commands.Core",
+        "EndScopeCommand": "EndTryCommand",
+        "CommandID": "e77e7de3-10c5-43cf-8aa9-755990f640f0",
+        "CommandName": "BeginTryCommand",
+        "SelectionName": "Try",
+        "v_IsPrivate": false,
+        "v_IsRemote": false,
+        "v_ErrorHandling": "None",
+        "v_Comment": null,
+        "CommandEnabled": true,
+        "LineNumber": 1,
+        "IsCommented": false,
+        "PauseBeforeExecution": false
+      },
+      "AdditionalScriptCommands": [
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+            "v_Input": "vMonth = DateTime.Now.ToString(\"MMM\");\r\nvYear = DateTime.Now.ToString(\"yyyy\");\r\n\r\nvFilePath = @\"C:\\Robot Testing\\2022\\Month Year\";\r\n\r\nvFilePath = vFilePath.Replace(\"Month\", vMonth);\r\nvFilePath = vFilePath.Replace(\"Year\", vYear);\r\n\r\nvCreatedFolderName = \"Garnishee Letters \" +vMonth+\" \"+vYear;",
+            "CommandID": "b98421c5-d480-451a-9396-365bbf8e2abc",
+            "CommandName": "EvaluateSnippetCommand",
+            "SelectionName": "Evaluate Snippet",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "* Set Month and Year \r\n* Set File Path\r\n* Set Folder Name",
+            "CommandEnabled": true,
+            "LineNumber": 2,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.SystemAutomation.Folder.GetFoldersCommand, OpenBots.Commands.SystemAutomation",
+            "v_SourceFolderPath": "vFilePath",
+            "v_OutputUserVariableName": "vFolderList",
+            "CommandID": "7be1b147-44ea-414c-9194-dc47bc733c2d",
+            "CommandName": "GetFoldersCommand",
+            "SelectionName": "Get Folders",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 3,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.If.BeginIfCommand, OpenBots.Commands.Core",
+            "v_Option": "Inline",
+            "v_Condition": "!vFolderList.Any(s => s.Contains(\"Garnishee Letters\"))",
+            "v_ActionType": null,
+            "v_ActionParameterTable": [],
+            "EndScopeCommand": "EndIfCommand",
+            "CommandID": "4fb9385d-13fc-4e76-9712-2dd37323f56c",
+            "CommandName": "BeginIfCommand",
+            "SelectionName": "If",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": "Checks if Keyword exists in Folder Path. ",
+            "CommandEnabled": true,
+            "LineNumber": 4,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": [
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.SystemAutomation.Folder.CreateFolderCommand, OpenBots.Commands.SystemAutomation",
+                "v_NewFolderName": "vCreatedFolderName",
+                "v_DestinationDirectory": "vFilePath",
+                "v_DeleteExisting": "No",
+                "CommandID": "b0ba6f3e-a26a-49c1-b384-51f44a1f9935",
+                "CommandName": "CreateFolderCommand",
+                "SelectionName": "Create Folder",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 5,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Engine.LogMessageCommand, OpenBots.Commands.Core",
+                "v_LogFile": "\"Engine Logs\"",
+                "v_LogText": "\"Folder created\"",
+                "v_LogType": "Information",
+                "v_Bitmap": null,
+                "CommandID": "2a7a39a9-f4e6-49e7-9da7-68adbe760bdd",
+                "CommandName": "LogMessageCommand",
+                "SelectionName": "Log Message",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 6,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                "v_Input": "vFilePath = vFilePath +@\"\\\"+ vCreatedFolderName;",
+                "CommandID": "36771126-d1df-489c-9c74-3f0eae1e3ff5",
+                "CommandName": "EvaluateSnippetCommand",
+                "SelectionName": "Evaluate Snippet",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 7,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.If.ElseCommand, OpenBots.Commands.Core",
+                "CommandID": "3d7ac223-5c45-4743-b109-eb4cd81f7fbc",
+                "CommandName": "ElseCommand",
+                "SelectionName": "Else",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 8,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Engine.LogMessageCommand, OpenBots.Commands.Core",
+                "v_LogFile": "\"Engine Logs\"",
+                "v_LogText": "\"Folder already created\"",
+                "v_LogType": "Information",
+                "v_Bitmap": null,
+                "CommandID": "2a7a39a9-f4e6-49e7-9da7-68adbe760bdd",
+                "CommandName": "LogMessageCommand",
+                "SelectionName": "Log Message",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 9,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.Variable.EvaluateSnippetCommand, OpenBots.Commands.Core",
+                "v_Input": "int index = vFolderList.FindIndex(a => a.Contains(\"Garnishee Letters\"));\r\nvFilePath = vFolderList[index];",
+                "CommandID": "f8831627-c685-4361-959a-51abe88ca800",
+                "CommandName": "EvaluateSnippetCommand",
+                "SelectionName": "Evaluate Snippet",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": "Filter for Folder.",
+                "CommandEnabled": true,
+                "LineNumber": 10,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            },
+            {
+              "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+              "ScriptCommand": {
+                "$type": "OpenBots.Commands.Core.If.EndIfCommand, OpenBots.Commands.Core",
+                "CommandID": "cc300bba-20df-4d48-9d58-832c099f6c52",
+                "CommandName": "EndIfCommand",
+                "SelectionName": "End If",
+                "v_IsPrivate": false,
+                "v_IsRemote": false,
+                "v_ErrorHandling": "None",
+                "v_Comment": null,
+                "CommandEnabled": true,
+                "LineNumber": 11,
+                "IsCommented": false,
+                "PauseBeforeExecution": false
+              },
+              "AdditionalScriptCommands": null
+            }
+          ]
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.ErrorHandling.CatchCommand, OpenBots.Commands.Core",
+            "v_Option": "Inline",
+            "v_VariableExceptionType": "typeof(System.Exception)",
+            "v_ExceptionType": "Exception",
+            "v_OutputUserVariableName": null,
+            "CommandID": "8442972b-7465-44e5-bee3-57505dd5b0f2",
+            "CommandName": "CatchCommand",
+            "SelectionName": "Catch",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 12,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        },
+        {
+          "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+          "ScriptCommand": {
+            "$type": "OpenBots.Commands.Core.ErrorHandling.EndTryCommand, OpenBots.Commands.Core",
+            "CommandID": "7f3f5d74-4528-44c4-9d90-3cac86e5e855",
+            "CommandName": "EndTryCommand",
+            "SelectionName": "End Try",
+            "v_IsPrivate": false,
+            "v_IsRemote": false,
+            "v_ErrorHandling": "None",
+            "v_Comment": null,
+            "CommandEnabled": true,
+            "LineNumber": 13,
+            "IsCommented": false,
+            "PauseBeforeExecution": false
+          },
+          "AdditionalScriptCommands": null
+        }
+      ]
+    },
+    {
+      "$type": "OpenBots.Core.Script.ScriptAction, OpenBots.Core",
+      "ScriptCommand": {
+        "$type": "OpenBots.Commands.Core.Task.RunTaskCommand, OpenBots.Commands.Core",
+        "v_TaskPath": "ProjectPath + @\"\\Populate Letter.obscript\"",
+        "v_AssignArguments": true,
+        "v_ArgumentAssignments": [
+          {
+            "ArgumentName": "in_FolderPath",
+            "ArgumentType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "ArgumentValue": "vFilePath",
+            "ArgumentDirection": "In"
+          }
+        ],
+        "CommandID": "c382fc80-7637-4428-941e-9e5996f90b5a",
+        "CommandName": "RunTaskCommand",
+        "SelectionName": "Run Task",
+        "v_IsPrivate": false,
+        "v_IsRemote": false,
+        "v_ErrorHandling": "None",
+        "v_Comment": null,
+        "CommandEnabled": true,
+        "LineNumber": 14,
+        "IsCommented": false,
+        "PauseBeforeExecution": false
+      },
+      "AdditionalScriptCommands": null
+    }
+  ],
+  "Version": "1.8.1.0"
+}
